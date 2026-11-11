@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hadiah Untuk Tasya ❤️</title>
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url("JPG/ecaaacantikkk.jpg") repeat top fixed;
+  background-size: 500px auto; /* atur ukuran gambar agar lebih kecil */
+  color: #fff;
+  text-align: center;
+  overflow-x: hidden;
+  position: relative;
+}
+
+    /* Overlay gelap cinematic */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.55); /* atur intensitas gelap */
+      z-index: -1;
+    }
+
+    header {
+      padding: 60px 20px 40px;
+    }
+    h1 {
+      font-size: 2.2em;
+      color: #ffb3c6;
+      animation: fadeInDown 2s ease;
+    }
+    p {
+      animation: fadeIn 3s ease;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 28px;
+      font-size: 16px;
+      color: white;
+      background: #d6336c;
+      border-radius: 25px;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+    }
+    .section {
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      display: none;
+      backdrop-filter: blur(6px);
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      position: relative;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Efek hover romantis */
+    .gallery img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 25px rgba(214, 51, 108, 0.6);
+      filter: brightness(1.1);
+      transition: all 0.4s ease;
+    }
+
+    /* Efek love muncul saat hover */
+    .gallery img:hover::after {
+      content: "❤️";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -80%);
+      font-size: 22px;
+      opacity: 0;
+      animation: loveFloat 1.2s ease forwards;
+    }
+
+    /* Animasi love melayang */
+    @keyframes loveFloat {
+      0% { opacity: 0; transform: translate(-50%, 0) scale(0.6); }
+      50% { opacity: 1; transform: translate(-50%, -30px) scale(1); }
+      100% { opacity: 0; transform: translate(-50%, -60px) scale(1.2); }
+    }
+
+    footer {
+      margin: 40px 0 20px;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    /* Animasi */
+    @keyframes fadeInDown {
+      from {opacity:0; transform: translateY(-20px);}
+      to {opacity:1; transform: translateY(0);}
+    }
+    @keyframes fadeIn {
+      from {opacity:0;}
+      to {opacity:1;}
+    }
+    @keyframes floatUp {
+      0% {transform: translateY(0); opacity:1;}
+      100% {transform: translateY(-200px); opacity:0;}
+    }
+    .heart {
+      position: fixed;
+      bottom: -20px;
+      font-size: 24px;
+      color: #e03177;
+      animation: floatUp 4s linear forwards;
+    }
+    /* Animasi slideDown */
+    @keyframes slideDown {
+      from {opacity: 0; transform: translateY(-40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    .slide-down {
+      display: block !important;
+      animation: slideDown 1.5s ease forwards;
+    }
+
+    /* Efek animasi klik foto */
+    @keyframes popImage {
+      0% { transform: scale(1); box-shadow: 0 0 0px rgba(214, 51, 108, 0); }
+      50% { transform: scale(1.2); box-shadow: 0 0 20px rgba(214, 51, 108, 0.6); }
+      100% { transform: scale(1); box-shadow: 0 0 0px rgba(214, 51, 108, 0); }
+    }
+    .gallery img.clicked {
+      animation: popImage 0.6s ease;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Untukmu, Sayang ❤️</h1>
+    <p>Sebuah hadiah kecil dari aku, Ayyas</p>
+    <button class="btn" onclick="bukaPesan()">Buka Pesannya</button>
+  </header>
+
+  <div class="section" id="surat">
+    <h2>Awal pertemuan</h2>
+    <p>
+      Siapa sangka, pertemuan sederhana antara driver Grab dan seorang penumpang bernama Eca cantik bisa menjadi cerita sehangat ini. Awalnya hanya sebatas mengantar ke tujuan, kini justru
+      menjadi seseorang yang ingin selalu ada dalam setiap perjalanan. Ternyata, perjalanan terindah <br>
+      bukan tentang ke mana kita pergi, tapi dengan siapa kita menjalaninya. <br>❤️ 🫶
+    </p>
+    <p>— Tasya Nur'Azizah Rohimi</p>
+  </div>
+
+  <div class="section" id="galeri">
+    <h2>Galeri Kenangan</h2>
+    <div class="gallery">
+      <img src="JPG/10.jpg" alt="kenangan1">
+      <img src="JPG/17.jpg" alt="kenangan2">
+      <img src="JPG/12.jpg" alt="kenangan3">
+      <img src="JPG/13.jpg" alt="kenangan4">
+    </div>
+  </div>
+
+  <!-- Halaman tambahan Komitmen -->
+  <div class="section" id="komitmen">
+    <h2>Komitmen Cinta Kita</h2>
+    <p>
+      "Cinta bukan hanya tentang hari ini, tapi tentang setiap hari yang akan kita jalani bersama.<br>
+      Aku berjanji untuk selalu menggenggam tanganmu, dalam tawa maupun air mata.<br>
+      Selama kamu, aku akan selalu ada." <br>💍❤️
+    </p>
+    <div class="gallery">
+      <img src="JPG/15.jpg" alt="komitmen1">
+      <img src="JPG/3.jpg" alt="komitmen2">
+      <img src="JPG/2.jpg" alt="komitmen3">
+      <img src="JPG/16.jpg" alt="komitmen4">
+    </div>
+    <button class="btn" onclick="bukaKomitmen()">Lihat Halaman Selanjutnya ❤️</button>
+
+<script>
+function bukaKomitmen() {
+  const audio = document.getElementById("bg-music");
+
+  if (audio) {
+    // Durasi fade out (ms)
+    const fadeDuration = 1500; 
+    const steps = 30; // jumlah langkah volume turun
+    const stepTime = fadeDuration / steps;
+    let currentStep = 0;
+
+    const fadeInterval = setInterval(() => {
+      currentStep++;
+      audio.volume = Math.max(0, 1 - (currentStep / steps));
+
+      if (currentStep >= steps) {
+        clearInterval(fadeInterval);
+        audio.pause();
+        audio.currentTime = 0; // reset ke awal
+        audio.volume = 1; // balikin default volume
+      }
+    }, stepTime);
+  }
+
+  // buka tab baru setelah delay sedikit biar fade terasa
+  setTimeout(() => {
+    window.open("Komitmen Nyata/komitmen.html", "_blank");
+  }, 500);
+}
+</script>
+
+  </div>
+
+  <footer>
+    Dibuat dengan cinta oleh Ayyas • 2026
+  </footer>
+
+  <audio id="bg-music" loop>
+    <source src="sound/Setangkai Bunga - Caffeine.mp3">
+  </audio>
+
+  <script>
+    function bukaPesan() {
+      const surat = document.getElementById('surat');
+      const galeri = document.getElementById('galeri');
+      const komitmen = document.getElementById('komitmen');
+
+      // reset biar bisa ulang animasi kalau ditekan lagi
+      [surat, galeri, komitmen].forEach(el => {
+        el.style.display = "none";
+        el.classList.remove("slide-down");
+      });
+
+      // tampilkan satu per satu dengan delay + auto scroll
+      setTimeout(()=> {
+        surat.classList.add("slide-down");
+        autoScrollTo(surat);
+      }, 200);
+
+      setTimeout(()=> {
+        galeri.classList.add("slide-down");
+        autoScrollTo(galeri);
+      }, 1800);
+
+      setTimeout(()=> {
+        komitmen.classList.add("slide-down");
+        autoScrollTo(komitmen);
+      }, 3400);
+
+      document.getElementById('bg-music').play();
+
+      for(let i=0;i<20;i++){
+        buatHati();
+      }
+    }
+
+    // fungsi auto scroll pelan
+    function autoScrollTo(element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    function buatHati() {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.innerHTML = '❤️';
+      heart.style.left = Math.random()*100 + 'vw';
+      heart.style.fontSize = (Math.random()*20 + 20) + 'px';
+      heart.style.animationDuration = (Math.random()*3 + 2) + 's';
+      document.body.appendChild(heart);
+      setTimeout(()=>heart.remove(),4000);
+    }
+
+    // Efek animasi klik foto
+    document.addEventListener("DOMContentLoaded", () => {
+      const images = document.querySelectorAll(".gallery img");
+      images.forEach(img => {
+        img.addEventListener("click", () => {
+          img.classList.add("clicked");
+          setTimeout(() => img.classList.remove("clicked"), 600);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
